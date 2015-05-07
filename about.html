@@ -1,0 +1,121 @@
+<div class="span12" id="mainContent">
+	<div id="about">
+		<div class="row">
+			<div class="span9 offset1">
+			<div class="page-header">
+			  <h1>まゆげジェネレータ　<small>写真にまゆげを。</small></h1>
+			</div>
+				<dl>
+					<img src="/img/sample.png" style="float:right;" class="span4 img-polaroid"/>
+					<dt><h3>まゆげジェネレータとは</h3></dt>
+					<dd>
+						<p>写真やイラストにまゆげを合成できるWebサービスです。</p>
+						<p>人の顔を自動認識してまゆげを描いたり、自分の好きな位置にまゆげを描いたりできます。</p>
+						<p>まゆげの描画にはSVG（Scalable Vector Graphics 、スケーラブル・ベクター・グラフィックス）を使用しているため、大きなまゆげも小さなまゆげも美しく描けます。サーバまたはローカルに保存するときにはPNGファイルに変換します。</p>
+					</dd>
+					<div class="clearfix"></div>
+					<dt><h3>使いかた</h3></dt>
+					<dd>
+						<img src="/img/howto.png" style="float: left; margin: 0 30px 10px 0;" class="span5 img-polaroid">
+						<ol>
+							<li><p><a class="btn" href="javascript:void(0)">ファイル選択</a>からファイルを選ぶとファイルが読み込まれます。サイズの大きいファイルは読み込みに時間がかかります。</p>
+								<p>自動で顔認識してまゆげを描きたい場合は、「顔認識する」にチェックを入れてからファイルを選びます。自動で描くまゆげの形や色を選んでおくこともできます。</p></li>
+							<li><p>「自動保存」をチェックしておくと、アップロード完了時やまゆげの編集後に画像がサーバに保存されます。</p></li>
+							<li><p>ファイルの読み込みが終わると、画像が画面の左側に表示されます。</p></li>
+							<li><p>まゆげの形や色、りんかくを選んで画像上でドラッグ＆ドロップすると、まゆげが描かれます。</p></li>
+							<li><p>まゆげはドラッグで移動できます。ダブルクリックすると削除出来ます。</p></li>
+							<li><p>形や色を選んで横の<a class="btn" href="javascript:void(0)">全まゆに適用</a>を押すと既存のまゆげがその形や色になります。</p></li>
+							<li><p><a class="btn" href="javascript:void(0)">ローカルに保存</a>を押すとPNG形式の画像が別ウィンドウで表示されます。右クリックで保存してください。</p></li>
+							<li><p><a class="btn" href="javascript:void(0)">サーバに保存</a>を押すとPNG形式の画像がサーバにアップロードされます。</p></li>
+						</ol>
+					</dd>
+					<dt><h3>注意事項など</h3></dt>
+					<dd>
+						<p>当サイトの内容やサービスの仕様は予告なく変更する場合があります。</p>
+						<p>サーバに保存した画像は予告なく削除する場合があります。</p>
+					</dd>
+					<dt><h3>仕様</h3></dt>
+					<dd>
+						<table class="table table-bordered">
+						  <caption>まゆげジェネレータの仕様</caption>
+<!-- 						  <thead>
+						    <tr>
+						      <th>&nbsp;</th>
+						      <th>技術</th>
+						      <th>備考</th>
+						    </tr>
+						  </thead> -->
+						  <tbody>
+						    <tr>
+						      <td style="width: 100px;">アップロード可能な画像</td>
+						      <td style="width: 250px;">JPG(JPEG)/ PNG/ GIF</td>
+						      <td style="width: 150px;">大文字/小文字どちらも可。</td>
+						    </tr>
+						    <tr>
+						      <td>画像サイズ</td>
+						      <td>2MBを超える画像はアップロードできません。また長辺が500pxを超えている場合は、500pxにリサイズされます。</td>
+						      <td>&nbsp;</td>
+						    </tr>
+						    <tr>
+						      <td>画像の保存</td>
+						      <td>
+						      	<p>自動保存または「サーバに保存」ボタンで画像をサーバに保存すると一意なURLが割り当てられます。まゆげの色の変更など画像編集をした場合、最後の状態だけが保存されます（サーバ上で画像が上書きされます）。途中の状態を残したいときは、「ローカルに保存」ボタンでパソコンに保存してください。</p>
+						      	<p>割り当てられたURLに後からアクセスすると保存されたPNG形式の画像が表示されます。PNG画像はまゆげの編集ができません。</p>
+						      </td>
+						      <td>保存処理中（画像が暗くなっているあいだ）はまゆげの編集（移動・追加・削除など）はできません。</td>
+						    </tr>
+						    <tr>
+						      <td>自動保存</td>
+						      <td>
+						      	<p>「自動保存する」がチェックされていると、下記のタイミングで画像がサーバに保存されます。</p>
+						      	<p>アップロード完了/ まゆげ移動/ まゆげ追加/ まゆげ削除/ まゆげ色変更/ りんかく変更</p>
+						      </td>
+						      <td>保存処理中（画像が暗くなっているあいだ）はまゆげの編集（移動・追加・削除など）はできません。</td>
+						    </tr>
+						  </tbody>
+						</table>
+					</dd>
+					<dt><h3>技術的なこと</h3></dt>
+					<dd>
+						<table class="table table-bordered">
+						  <caption>まゆげジェネレータで使っている環境など</caption>
+						  <thead>
+						    <tr>
+						      <th>&nbsp;</th>
+						      <th>技術</th>
+						      <th>備考</th>
+						    </tr>
+						  </thead>
+						  <tbody>
+						    <tr>
+						      <td>サーバ</td>
+						      <td>CentOS/ Apache</td>
+						      <td>レンタルサーバ</td>
+						    </tr>
+						    <tr>
+						      <td>サーバサイド</td>
+						      <td>PHP5.3</td>
+						      <td>DBは使用していません。</td>
+						    </tr>
+						    <tr>
+						      <td>クライアントサイド</td>
+						      <td>jQuery/ AngularJS/ Twitter Bootstrap/ SVG/ Canvas</td>
+						      <td>jQuery plug-in各種</td>
+						    </tr>
+						  </tbody>
+						</table>
+						<p>まゆげジェネレータはまゆげの描画を中心に、ほとんどの処理をクライアントサイドで行なっています。サーバサイドで行なっているのは<a href="http://detectface.com/" target="_blank">detectFace();</a>へのリクエスト中継とまゆげ画像の保存程度です。</p>	
+					</dd>
+					<dt><h3>動作検証ついて</h3></dt>
+					<dd>
+						<p>PC版Google Chromeのみで動作確認しています（2013/03/20時点ではバージョン25を使用）。他のブラウザで動作するかは分かりません。モバイルブラウザでも将来SVGやファイルアップロードがサポートされたら動くかもしれません。</p>
+					</dd>
+					<dt><h3>顔認識について</h3></dt>
+					<dd>
+						<p><a href="http://detectface.com/" target="_blank">detectFace();</a>という顔認識Webサービスを利用しています。</p>
+					</dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+</div>

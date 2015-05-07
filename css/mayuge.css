@@ -1,0 +1,56 @@
+#alertbox {
+	margin-bottom: 5px;
+}
+
+#toolBox .form-vertical .controls{
+	margin-left: 20px;
+}
+
+#mayugeTypeBox .form-horizontal .controls{
+	margin-left: 0;		
+	margin-right: 20px;	/*全適用ボタンの位置を調整*/
+}
+
+#mayugeTypeBox img{
+	width: 26px;
+}
+
+#toolBox .form-vertical .controls .radio{
+	white-space: nowrap;
+}
+
+#snsBtn {
+	margin:10px 0 10px 0;
+}
+
+.twitter-share-button {
+	width: 105px !important;
+}
+
+#about dt {
+	margin-top: 40px;
+}
+
+.navbar-googlenav .brand {
+  color: #666;
+}
+
+body {
+	background-color: #fbfbfb;
+}
+
+#ad-banner {
+	margin-left: 50px;
+}
+
+#ad-sky {
+	margin-top: 30px;
+}
+
+#mainContent {
+    margin-left: 0px;
+}
+
+#png-warning {
+	margin-bottom: 2px;
+}
