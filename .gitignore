@@ -1,5 +1,3 @@
-sftp*
-
-*sublime*
-
-
+.DS_Store
+node_modules/
+js/.module-cache/
